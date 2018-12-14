@@ -1,0 +1,85 @@
+.ToanTrang{
+    width:800px;
+    height: 1000px;
+    position:relative;
+    border: 2px solid black; 
+    display: block;   
+}
+.avatar image {
+    width: 180px;
+    height: 193px;
+    margin-right:20px; 
+    padding: 5px;
+    margin-top: 0.2px;
+}
+h3 {
+    background-color: aqua;
+    width: 800px;
+    height: 30px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-top: 1px solid black;
+    font-family: Verdana;
+    font-weight: bold;
+    margin-top: -1px;
+}
+.avatar {
+    width: 800px;
+    height: 200px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: -22px;
+}
+.Inf {
+    margin-left: 250px;
+    margin-top: -22%;
+}
+.Inf a{
+    font-family: Verdana;
+    font-weight: bold;
+    line-height: 2;
+}
+.Intro {
+    width: 800px;
+    height: 250px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.Intro a {
+    font-family: Verdana;
+    font-weight: bold;
+    line-height: 2;
+    margin-left: 20px;
+}
+.HocVan a {
+    font-family: Verdana;
+    font-weight: bold;
+    line-height: 2;
+    margin-left: 10px;
+}
+.HocVan  {
+    width: 800px;
+    height: 250px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.HocVan p {
+    font-family: Verdana;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 20px;
+}
+h4 {
+    margin-left: 5px;
+}
+.HocVan a {
+    font-family: Segoe UI;
+    font-style: initial;
+}
+.HocVan image {
+    margin-left: 500px;
+    width: 180px;
+    height: 220px;
+    margin-top: -220px;
+
+}

@@ -1,0 +1,14 @@
+span {
+    width: 50px;
+    height: 20px;
+    color: #402E2A;
+    font-weight: bold;
+    background-color: #D5B0AC;
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid white;
+}
+.menu_vertical{
+    margin-top: 20px;
+    width: 100px;
+}
