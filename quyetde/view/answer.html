@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quyết đê</title>
+</head>
+<body>
+    <h1>Nội dung câu hỏi</h1>
+    <button class="btn-answer" data-questionid="">Đúng</button>
+    <button class ="btn-answer" data-questionid="">Sai</button>
+    <button>Xem câu hỏi khác</button>
+    <button class="btn btn-warning btn-result" data-questionId="" role="button">Kết quả vote</button>   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(".btn-answer").click(function() {
+            const vote = $(this).attr("id");
+            const questionId = $(".btn-answer").attr("data-questionid");
+            $ajax({
+                url:"/vote/"+questionId+"/"+vote,
+                type: "GET",
+                success: function (data){
+                // console.log(data.question);
+                // $("#content").text(data.question.content);
+                window.location
+            },
+            error: function(err) {
+                console.log("error" + err);
+               }   
+            });
+        });
+        $.ajax({
+            url: "http://localhost:6969/api/random",
+            type: "GET",
+            success: function (data){
+                console.log(data.question);
+                $("#content").text(data.question.content);
+                $(".btn-answer").attr("data-questionid",data.question.id);
+            },
+            error: function(err) {
+                console.log("error" + err);
+            }   
+        });
+    </script>
+
+</body>
+</html>
